@@ -50,7 +50,7 @@ end AAI;
 
 architecture behave of AAI is
 
-signal start : natural range 0 to width+CPUDBwidth-1;
+signal start : natural range 0 to width+CPUDBwidth;
 signal D : std_logic_vector( CPUDBwidth*32 downto 0 );
 
 begin

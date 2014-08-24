@@ -67,7 +67,7 @@ begin
 
 cpu:dspemulator
 	generic map( 
-		DSP_INC_FILE => "rcbus2.inx",
+		DSP_INC_FILE => "e:\works\ringbus\testbench\rcbus2.inx",
 		ABUS_WIDTH => 8,
 		DBUS_WIDTH => 8 )
 	port map(
