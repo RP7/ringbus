@@ -1,5 +1,6 @@
 # lib
 *.lib
+simio/simio/*
 
 # sim dir
 sim/*
