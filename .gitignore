@@ -1,5 +1,8 @@
-# work dir
-work/*
+# lib
+*.lib
+
+# sim dir
+sim/*
 
 # backup
 *~
