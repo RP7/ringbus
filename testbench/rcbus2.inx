@@ -1,20 +1,40 @@
-W0010 00 00
+# Reset the AAI
+W0010 00 01
+# Write Address Reg 0x0001
 W0010 01 01
 W0010 01 00
+# Write Data Reg 0x5a0a
 W0010 02 0a
-W0010 02 00
+W0010 02 5a
+# Write BADDR Reg 0x01
 W0010 04 01
+# Write Command Reg 0x02 // write
 W0010 08 02
+# START 
 W0010 0f 00
-W0010 00 00
+# Reset the AAI
+W0010 00 01
+# Write Address Reg 0x0001
 W0010 01 01
 W0010 01 00
+# Write Command Reg 0x01 // read
 W0010 08 01
+# START 
 W0010 0f 00
+# Write rd Tag Reg 0x00
 W0010 0a 00
-W0010 00 00
+# Reset the AAI
+W0010 00 01
+R0010 0f
+R0010 0f
+R0010 00
+R0010 00
 R0010 01
 R0010 01
+R0010 0f
+R0010 0f
+R0010 00
+R0010 00
 R0010 01
 R0010 01
 R0010 01

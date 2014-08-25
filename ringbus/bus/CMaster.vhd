@@ -299,14 +299,14 @@ begin
 		case addr is
 			when reg_Control_Busy =>
 				Dout(0)<=busy_i;
-				Dout( 7 downto 1 )<=(others=>'Z');
+				Dout( 7 downto 1 )<=(others=>'0');
 			when reg_Control_TagState =>
 				Dout(0)<=TagState(conv_integer(rdTag));
-				Dout( 7 downto 1 )<=(others=>'Z');
+				Dout( 7 downto 1 )<=(others=>'0');
 			when reg_Control_TagData =>
 				Dout<=TagData( 7 downto 0 );
 			when others =>
-				Dout<=(others=>'Z');
+				Dout<=(others=>'0');
 		end case;
 	end if;
 end process;

@@ -92,7 +92,11 @@ begin
 				dspaTemp:=conv_std_logic_vector(0,ABUS_WIDTH);
 				if NOT ENDFILE(data_file) then
 					booval := true;
-					READLINE(data_file, buf);
+					filterComment: loop
+						READLINE(data_file, buf);
+						exit filterComment when ENDFILE(data_file);
+						exit filterComment when NOT (buf(buf'LOW) = '#');
+					end loop;
 					lineno:=lineno+1;
 					if (buf(buf'LOW) = 'W') then
 						wrinc:=true;
