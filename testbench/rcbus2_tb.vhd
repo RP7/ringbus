@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 --
--- Title       : Testbench for Two End Point Example for Ring Bus
+-- Title       : Testbench for Two Control End Point Example for Ring Bus
 -- Design      : Ring Bus
 -- Author      : a4a881d4
 -- Company     : RP7
@@ -14,7 +14,7 @@
 --
 ---------------------------------------------------------------------------------------------------
 --
--- Description : Testbench for Two End Point Example for Ring Bus
+-- Description : Testbench for Two Control End Point Example for Ring Bus
 --               two end point
 -- 
 -- Rev: 1.0
@@ -67,7 +67,7 @@ begin
 
 cpu:dspemulator
 	generic map( 
-		DSP_INC_FILE => "e:\works\ringbus\testbench\rcbus2.inx",
+		DSP_INC_FILE => "g:\works\ringbus\testbench\rcbus2.inx",
 		ABUS_WIDTH => 8,
 		DBUS_WIDTH => 8 )
 	port map(
